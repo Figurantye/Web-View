@@ -1,0 +1,17 @@
+body{
+    background-color: lightgray;
+}
+
+.god{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.textinho{
+    background-color: darkseagreen;
+}
+
+.cadastro{
+    background-color: aliceblue;
+}
