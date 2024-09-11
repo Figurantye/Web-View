@@ -7,7 +7,7 @@ const connection = mysql.createConnection({
     database: 'usuarios'
 })
 
-export function RegistrarUsuarioBD(usuario){
+export function RegistrarUsuario(usuario){
     try {
         const query = connection.query(
             'INSERT INTO dadosUsuario (username, email, senha) VALUES (?, ?, ?)', [usuario.getNome(), usuario.getEmail(), usuario.getSenha()], function(error, result){}

@@ -1,7 +1,11 @@
 import { UsuarioModel } from "../Model/UsuarioModel";
-const { RegistrarUsuario } = require("../DAL/RegistrarUsuario");
 
-export function inserirRegistroController(username, email, senha) {
+export function RegistrarUsuarioController(username, email, senha) {
     const usuario = new UsuarioModel(username, email, senha);
-    RegistrarUsuario.RegistrarUsuario(usuario);
+    usuario.RegistrarUsuarioModel(usuario);
+}
+
+export function AnalisarRegistroController(username, email) {
+    const usuario = new UsuarioModel(username, email);
+    usuario.AnalisarRegistroModel(usuario);
 }
