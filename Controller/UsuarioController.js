@@ -1,5 +1,4 @@
 import { UsuarioModel } from "../Model/UsuarioModel";
-
 const { RegistrarUsuario } = require("../DAL/RegistrarUsuario");
 
 export function inserirRegistroController(username, email, senha) {

@@ -4,14 +4,35 @@ body{
 
 .god{
     display: flex;
-    justify-content: center;
-    width: 50%;
+    height: 85vh;
 }
 
 .textinho{
-    background-color: darkseagreen;
+    background-color: rgb(7, 231, 7);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    color: white;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    align-content: center;
+    box-shadow: 10px 5px silver;
 }
 
 .cadastro{
-    background-color: aliceblue;
+    background-color: white;
+    color: rgb(7, 231, 7);
+    width: 700px;
+    height: 400px;
+    text-align: center;
+    align-content: center;
+    box-shadow: 5px 5px silver;
+}
+
+
+.dado{
+    width: 80%;
+    background-color: rgb(232, 232, 232); 
+    border: none;
+    height: 30px;
 }

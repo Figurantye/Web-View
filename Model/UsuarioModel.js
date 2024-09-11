@@ -1,5 +1,4 @@
-import RegistrarUsuario
-
+import { RegistrarUsuarioBD } from "../DAL/RegistrarUsuario";
 
 export class UsuarioModel {
     nome;
@@ -41,7 +40,7 @@ export class UsuarioModel {
     }
 
     inserirUsuarioModel(novoUsuario){
-        const registrar = new RegistrarUsuario();
-        registrar.RegistrarUsuario()
+        const registrar = new RegistrarUsuarioBD;
+        registrar.RegistrarUsuario(novoUsuario);
     }
 }
