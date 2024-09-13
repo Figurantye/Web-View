@@ -8,8 +8,8 @@ const connection = mysql.createConnection({
 })
 
 export function AnalisarRegistros(usuario){
+    let contem = null; 
     try {
-        let contem = null;
         const query = connection.query(
             "SELECT COUNT(username) FROM usuarios WHERE username = '"+ usuario.getNome() + "' OR email = "+usuario.getEmail()+"'", function(error, result){
                 if (result > 0) {
