@@ -1,11 +1,11 @@
-const usuarioModel = require('../Model/UsuarioModel')
+import { UsuarioModel } from "../Model/UsuarioModel.js";
 
-function RegistrarUsuarioController(username, email, senha) {
-    const usuario = new usuarioModel.UsuarioModel(username, email, senha);
+export function RegistrarUsuarioController(username, email, senha) {
+    const usuario = new UsuarioModel(username, email, senha);
     usuario.RegistrarUsuarioModel(usuario);
 }
 
-function AnalisarRegistroController(username, email) {
-    const usuario = new usuarioModel.UsuarioModel(username, email);
+export function AnalisarRegistroController(username, email) {
+    const usuario = new UsuarioModel(username, email);
     usuario.AnalisarRegistroModel(usuario);
 }
