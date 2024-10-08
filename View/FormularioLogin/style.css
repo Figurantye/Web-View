@@ -1,0 +1,100 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(5, 57, 155), rgb(5, 57, 155));
+    
+
+}
+
+.boxDados {
+    /* display: flex;
+    justify-content: center; */
+    color: rgba(255, 255, 255, 0.738);
+    display: grid;
+    place-items: center;
+    /* Center both horizontally and vertically */
+    height: 100vh;
+    background-image: linear-gradient(rgb(5, 57, 155), rgb(15, 135, 247));
+
+
+
+
+
+
+
+
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    
+   */
+
+
+
+
+
+
+
+
+
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    background-image: linear-gradient(rgb(33, 30, 36), rgb(55, 50, 66));
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+
+
+
+
+
+
+
+
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('font/roboto/Roboto-Thin.ttf');
+}
+
+h3 {
+    font-family: Roboto
+}
+
+.navbar {
+    font-family: Roboto
+}
+
+.alert {
+    font-family: Roboto
+}
+
+.btRegistrar{
+    font-family: Roboto;
+}
+
+
+
+
+
+@font-face {
+    font-family: RobotoBold;
+    src: url('font/roboto/Roboto-Regular.ttf');
+}
+
+ 
+.alert {
+    font-family: RobotoBold;
+    font-size: small;
+}

@@ -1,12 +1,12 @@
-import { AnalisarRegistros } from "../DAL/AnalisarRegistrosBD";
+import { analise } from "../DAL/AnalisarRegistrosBD";
 import { create } from "../DAL/RegistrarUsuarioBD";
 
 export class UsuarioModel {
     private nome:string;
     private email:string;
-    private senha:string;
+    private senha:string | null;
     
-    constructor(nome:string, email:string, senha:string) {
+    constructor(nome:string, email:string, senha:string | null) {
         this.nome = nome;
         this.email = email;
         this.senha = senha;
@@ -41,7 +41,7 @@ export class UsuarioModel {
     }
 
     AnalisarRegistroModel(novoUsuario:UsuarioModel){
-        AnalisarRegistros(novoUsuario)
+        analise(novoUsuario)
     }
 
 
