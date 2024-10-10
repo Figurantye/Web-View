@@ -1,18 +1,23 @@
-//Método para validação de login
-const connection = mysql.createConnection({
-    host: '127.0.0.1',
-    user: 'root',
-    password: '',
-    database: 'usuarios'
-})
-
-export function ValidarLogin(usuario){
-    try {
-        let contem = null;
-        const query = connection.query(
-            'SELECT * FROM usuarios WHERE username = ? OR email = ? AND senha = ?', [usuario.getNome(), usuario.getEmail(), usuario.getSenha()], function(error, result){}
-        )
-    } catch (error) {
-        console.error(error);
-    }
-}
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.analise = void 0;
+var DBConnection_1 = require("./DBConnection");
+var analise = function (usuario) {
+    var contem = false;
+    var queryString = "SELECT COUNT(username) FROM usuarios WHERE username = '?' OR email = '?' AND password = '?'";
+    DBConnection_1.db.query(queryString, [usuario.getNome(), usuario.getEmail(), usuario.getSenha()], function (err, result) {
+        if (err) {
+            console.error(err);
+        }
+        ;
+        var resultado = Number(result);
+        if (resultado > 0) {
+            contem = true;
+        }
+        else {
+            contem = false;
+        }
+    });
+    return contem;
+};
+exports.analise = analise;
