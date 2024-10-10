@@ -1,4 +1,4 @@
-const usuarioController = require("../../Controller/UsuarioController")
+const usuarioController = require("../../Controller/UsuarioController.js")
 
 let arrayUsuarios = []
 
