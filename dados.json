@@ -1,0 +1,20 @@
+[
+    {           
+        "usuarios":[
+            {
+                "username": "",
+                "senha": "",
+                "email": "",
+                "bio": ""
+            }
+        ],
+        "post":[
+            {
+                "autor": "",
+                "legenda": "",
+                "clima": "",
+                "likes": ""
+            }
+        ]
+    }
+]
